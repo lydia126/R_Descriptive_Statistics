@@ -1,6 +1,7 @@
 # Lecture 03. Descriptive Statistics Using R
 ## Objective: summarizing, describing and presenting data
 ## Example data: iris
+## Github version
 
 # 1. Load data and view
 dat <- iris
@@ -29,8 +30,8 @@ sd(dat$Sepal.Length) # standard deviation
 var(dat$Sepal.Length) # variance
 
 ## use sapply, lapply libraries
-sapply(dat[, 1:4], sd) # df 각 열의 함수(sd)를 벡터 또는 행렬 형식으로 출력 
-lapply(dat[, 1:4], sd) # df 각 열의 함수(sd)를 list 형식으로 출력 
+sapply(dat[, 1:4], sd) # apply sd library for each column of vector 
+lapply(dat[, 1:4], sd) # output list type
 
 # 3. Summary statistics
 summary(dat)
